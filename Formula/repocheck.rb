@@ -5,11 +5,11 @@
 class Repocheck < Formula
   desc ""
   homepage ""
-  version "0.5.1-alpha"
+  version "0.5.2-alpha"
 
   on_macos do
-    url "https://github.com/bevane/repocheck/releases/download/v0.5.1-alpha/repocheck_Darwin_all.tar.gz"
-    sha256 "ea2ce9d61fad8d8feb8b84533aaa6b08bd8aad18b3de48ffaae346db79a815dc"
+    url "https://github.com/bevane/repocheck/releases/download/v0.5.2-alpha/repocheck_Darwin_all.tar.gz"
+    sha256 "d0642b44748ccfc5e5ea0c2f2703b3d359b9d4ab1c273f0e12681c8cd2704422"
 
     def install
       bin.install "repocheck"
@@ -22,8 +22,8 @@ class Repocheck < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bevane/repocheck/releases/download/v0.5.1-alpha/repocheck_Linux_x86_64.tar.gz"
-        sha256 "657402744864ce47c7b841d18f2c0fa34dd618c4dcd0934758f8532f2ff9e91a"
+        url "https://github.com/bevane/repocheck/releases/download/v0.5.2-alpha/repocheck_Linux_x86_64.tar.gz"
+        sha256 "f1b5acb8d225db4bf1d4129b3651d49fb670a30aeb0dd19ae0e05f07f2d55569"
 
         def install
           bin.install "repocheck"
@@ -35,8 +35,8 @@ class Repocheck < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bevane/repocheck/releases/download/v0.5.1-alpha/repocheck_Linux_arm64.tar.gz"
-        sha256 "59da69beb4b3682ca0dbc89fc7d67b01547719857e7c0fd4ee44d269b9fbc785"
+        url "https://github.com/bevane/repocheck/releases/download/v0.5.2-alpha/repocheck_Linux_arm64.tar.gz"
+        sha256 "82fc146c0afae01db1a7f3f0ef82b020ac7e133fb2fc183a28dbd5f994ad6979"
 
         def install
           bin.install "repocheck"
